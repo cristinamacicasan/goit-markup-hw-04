@@ -410,6 +410,32 @@ h1 {
   color: var(--address);
 }
 
+.team-icon {
+  margin: 12px 12px 12px 12px;
+  display: flex;
+  align-items: center;
+  width: 20px;
+  height: 20px;
+  fill: rgba(175, 177, 184, 1);
+}
+
+.team-icon:hover {
+  fill: white;
+}
+
+.team-link:hover {
+  background-color: #2196f3;
+  border-radius: 50%;
+  fill: white;
+}
+
+.team-link {
+  display: flex;
+  border: 1px solid;
+  border-radius: 50%;
+  color: white;
+}
+
 /*footer*/
 
 .footer {
@@ -491,25 +517,37 @@ h1 {
   text-transform: uppercase;
   margin-bottom: 20px;
 }
-.social li:hover {
+
+.icon-link:hover {
   background-color: #2196f3;
-  border-radius: 50px;
+  border-radius: 50%;
+  fill: white;
 }
 
 .social {
   display: flex;
-  padding-left: 60px;
   width: 206px;
   gap: 10px;
 }
 
-.social-icon {
-  width: 20px;
-  height: 20px;
-  top: 12px;
-  fill: rgba(255, 255, 255, 1);
+.icon-link {
+  display: flex;
   background-color: #000000;
   border-radius: 50%;
+  color: white;
+}
+
+.social-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  margin-top: 12px;
+  margin-bottom: 12px;
+  margin-right: 12px;
+  margin-left: 12px;
+  fill: white;
 }
 
 .footer-parent {
@@ -521,8 +559,8 @@ h1 {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  padding-top: 20px;
-  padding-left: 70px;
+  margin-top: 20px;
+  margin-left: 70px;
 }
 .social {
   display: flex;
@@ -767,14 +805,6 @@ h1 {
   left: 5.16px;
   fill: rgba(175, 177, 184, 1);
 }
-.icon-linkedin {
-  width: 20px;
-  height: 20px;
-  top: 12px;
-  left: 12px;
-  padding: 1.88px, 0px, 1.88px, 0px;
-  fill: rgba(175, 177, 184, 1);
-}
 
 .customers {
   font-family: var(--text-font-family);
@@ -797,49 +827,41 @@ h1 {
 }
 
 .section-container-icon {
-  text-align: center;
-  top: 2401px;
-  padding-top: 94px;
-  padding-bottom: 94px;
+  width: 1200px;
+  margin: auto;
 }
-.symbols-container {
+
+.section-container-icon ul {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 94px;
+  margin-top: 50px;
+  width: 1200px;
+  column-gap: 30px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .symbols {
-  padding-top: 16px;
-  padding-left: 32px;
   width: 170px;
   height: 92px;
-  top: 2493px;
-  left: 215px;
   border-radius: 4px;
-  border: 1px solid rgba(175, 177, 184, 1);
-  transition: border-color 0.3s ease;
-  margin: 0 30px;
-  justify-content: space-between;
+  border: 1px solid #afb1b8;
   fill: #afb1b8;
 }
-.symbols {
-  color: #afb1b8;
-}
 
-.symbols :hover {
-  border-color: #188ce8;
+.symbols:hover {
+  border: 1px solid rgba(33, 150, 243, 1);
+  fill: rgba(33, 150, 243, 1);
 }
-
-.symbols :hover {
-  stroke: #188ce8;
-}
-
-.flag {
-  width: 170px;
-  height: 92px;
-  top: 16px;
-  left: 32px;
-}
-
-.flag-class:hover {
-  stroke: #188ce8;
+.symbols-company {
+  width: 106px;
+  height: 60px;
+  margin-top: 16px;
+  margin-right: 32px;
+  margin-left: 32px;
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
 }
